@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Maksym_Nadvornyi</string>
+    <string name="mountain_image">Mountain image</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="sign_in_to_access_your_account">Sign in to access your account</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="next">Next</string>
+    <string name="new_member_register_now">New Member? Register now</string>
+    <string name="get_started">Get Started</string>
+    <string name="create_account">by creating a free account.</string>
+    <string name="full_name">Full name</string>
+    <string name="valid_email">Valid email</string>
+    <string name="phone_number">Phone number</string>
+    <string name="agree_terms_conditions">I agree to the terms and conditions</string>
+    <string name="already_member_login">Already a member? Log In</string>
+</resources>
