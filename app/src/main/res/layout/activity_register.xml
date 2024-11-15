@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
     android:background="#FFFFFF">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_menu_camera"
+        app:srcCompat="@android:drawable/ic_menu_camera"
         android:contentDescription="@string/mountain_image"
         android:layout_gravity="center"
         android:paddingBottom="16dp" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/get_started"
@@ -22,7 +24,7 @@
         android:layout_gravity="center"
         android:paddingTop="16dp" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/create_account"
@@ -30,59 +32,79 @@
         android:layout_gravity="center"
         android:paddingBottom="32dp" />
 
-    <EditText
-        android:id="@+id/etFullName"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/full_name"
-        android:inputType="textPersonName"
-        android:drawableEnd="@android:drawable/ic_menu_myplaces" />
+        android:hint="@string/full_name">
 
-    <EditText
-        android:id="@+id/etEmail"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:drawableEnd="@android:drawable/ic_menu_myplaces" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/valid_email"
-        android:inputType="textEmailAddress"
-        android:autofillHints="emailAddress"
-        android:drawableEnd="@android:drawable/ic_menu_send"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp">
 
-    <EditText
-        android:id="@+id/etPhone"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
+            android:drawableEnd="@android:drawable/ic_menu_send" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/phone_number"
-        android:inputType="phone"
-        android:drawableEnd="@android:drawable/ic_menu_call"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp">
 
-    <EditText
-        android:id="@+id/etPassword"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:drawableEnd="@android:drawable/ic_menu_call" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/password"
-        android:inputType="textPassword"
-        android:autofillHints="password"
-        android:drawableEnd="@android:drawable/ic_lock_idle_lock"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp">
 
-    <CheckBox
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            android:drawableEnd="@android:drawable/ic_lock_idle_lock" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/agree_terms_conditions"
         android:layout_marginTop="16dp" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/next"
-        android:backgroundTint="#6200EE"
+        android:backgroundTint="@color/colorPrimary"
         android:textColor="#FFFFFF"
         android:layout_marginTop="32dp" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/already_member_login"
